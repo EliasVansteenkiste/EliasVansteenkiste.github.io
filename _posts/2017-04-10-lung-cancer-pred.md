@@ -3,7 +3,7 @@ layout: post
 title: Predicting lung cancer
 description: "Description of our solution for Kaggle's third Data Science Bowl. "
 modified: 2016-12-02
-tags: [lung cancer, transfer learning, convolutional networks, imagenet, resnet]
+tags: [lung cancer, transfer learning, convolutional networks, imagenet, Kaggle, Data Science Bowl]
 categories: [machine learning]
 image:
     feature: feature.jpg
@@ -31,12 +31,14 @@ Lung cancer is the most common cause of cancer death worldwide. Second to breast
 To predict lung cancer starting from a CT scan of the chest, the overall strategy was to reducing the high dimensional CT scan to a few regions of interest. Starting from these regions of interest we tried to predict lung cancer. In what follows we will explain how we trained several networks to extract the region of interests and to make final prediction starting from the regions of interest.
 This post is pretty long, so here is a clickable overview of different sections if you want to skip ahead:
 
-1. [The Needle in The Haystack](#the-needle-in-the-haystack)
-2. [Nodule Segmentation](#nodule-segmentation)
-3. [Lung Segmentation](#lung-segmentation)
-4. [False Positive Reduction](#false-positive-reduction)
-5. [Malignancy Prediction](#malignancy-prediction)
-6. [Lung Cancer Prediction](#lung-cancer-prediction)
+* [The Needle in The Haystack](#the-needle-in-the-haystack)
+* [Nodule Detection](#nodule-detection)
+   1. [Nodule Segmentation](#nodule-segmentation)
+   2. [Lung Segmentation](#lung-segmentation)
+   3. [Blob Detection](#blob-detection)
+* [False Positive Reduction](#false-positive-reduction)
+* [Malignancy Prediction](#malignancy-prediction)
+* [Lung Cancer Prediction](#lung-cancer-prediction)
    1. [Transfer learning](#transfer-learning)
    2. [Aggregating Nodule Predictions](#aggregating-nodule-predictions)
    3. [Ensembling](#ensembling)
@@ -55,44 +57,41 @@ The radius of the average malicious nodule in the LUNA dataset is 4.8 mm and the
 This problem is even worse in our case because we have to try to predict lung cancer starting from a CT scan a year before diagnosis. In the LUNA dataset the patients are already diagnosed with lung cancer. In our case the patients may not yet have developed a malignant nodule. So it is reasonable to assume that training directly on the data and labels from the competition wouldn't work, but we tried it anyway and observed that the network doesn't learn more than the bias in the training data.
 
 
-# Nodule Segmentation
+# Nodule Detection
+## Nodule Segmentation
 To reduce the amount of information in the scans, we first tried to detect pulmonary nodules. 
-We built a netwerk for segmenting the nodules based on the input volume. The segmentation network is trained on 64 mm x 64 x 64mm
-The segmentation network architecture is based on U-Net, but with less pooling. (TODO REASON?) 
+We built a network for segmenting the nodules in the input scan. The LUNA dataset contains annotations for each nodule in a patient. These annotations contain the location and diameter of the nodule. We used this information to train our segmentation network. 
 
-{% highlight python %}
-    net = {}
-    base_n_filters = 128
-    net['contr_1_1'] = conv_prelu_layer(l_in, base_n_filters)
-    net['contr_1_2'] = conv_prelu_layer(net['contr_1_1'], base_n_filters)
-    net['contr_1_3'] = conv_prelu_layer(net['contr_1_2'], base_n_filters)
-    net['pool1'] = max_pool3d(net['contr_1_3'])
+64x64x64 mm patches are cut out of the CT scan and fed to the input of the segmentation network. The ground truth are 32x32x32 mm binary masks. For each voxel they indicate if the voxel is inside the nodule. The masks are constructed by using the diameters in the nodule annotations. 
 
-    net['encode_1'] = conv_prelu_layer(net['pool1'], base_n_filters)
-    net['encode_2'] = conv_prelu_layer(net['encode_1'], base_n_filters)
-    net['encode_3'] = conv_prelu_layer(net['encode_2'], base_n_filters)
-    net['encode_4'] = conv_prelu_layer(net['encode_3'], base_n_filters)
-
-    net['upscale1'] = nn.layers.Upscale3DLayer(net['encode_4'], 2)
-    net['concat1'] = nn.layers.ConcatLayer([net['upscale1'], net['contr_1_3']],
-                          cropping=(None, None, "center", "center", "center"))
-
-    net['dropout_1'] = nn.layers.dropout_channels(net['concat1'], p=0.25)
-
-    net['expand_1_1'] = conv_prelu_layer(net['dropout_1'], 2 * base_n_filters)
-    net['expand_1_2'] = conv_prelu_layer(net['expand_1_1'], base_n_filters)
-    net['expand_1_3'] = conv_prelu_layer(net['expand_1_2'], base_n_filters)
-    net['expand_1_4'] = conv_prelu_layer(net['expand_1_3'], base_n_filters)
-    net['expand_1_5'] = conv_prelu_layer(net['expand_1_4'], base_n_filters)
-
-    l_out = dnn.Conv3DDNNLayer(net['expand_1_5'], num_filters=1,
-                               filter_size=1,
-                               nonlinearity=nn.nonlinearities.sigmoid)
+{% highlight python %} 
+intersection = T.sum(y_true * y_pred, axis=(1, 2, 3))
+dice = (2. * intersection + epsilon) / 
+        (T.sum(y_true, axis=(1, 2, 3)) + T.sum(y_pred, axis=(1, 2, 3)) + epsilon)
 {% endhighlight %}
 
+As an objective we choose to directly optimize the Dice coefficient, commonly used for image segmentation. It handles the imbalance between the voxels in- and outside the nodule well. This is particularly important for the smaller nodules, which are also interesting in case of the early stage cancer detection.
+
+The downside of using the Dice coefficient is that the 
+We also apply translation and rotation augmentations
 
 
-# Lung segmentation
+We applied a translation and rotation augmentation. 
+
+We start at the center of the nodule and applied a random translation and rotation
+ a random translation between -12 and 12 mm in each dimension.   and a random augmentation.  For each nodule wWe cut out  is trained on
+The segmentation network architecture is based on U-Net, but with less pooling. (TODO REASON?) 
+
+<figure>
+<a href="{{ site.url }}/images/nodule_segnet.jpg">
+<img src="{{ site.url }}/images/nodule_segnet.jpg" alt=""></a>
+<figcaption>A schematic of the segmentation network architecture, the tensor shapes and network operations</figcaption>
+</figure>
+
+
+## Blob Detection
+
+## Lung Segmentation
 The nodule segmentation network generates a lot of candidate nodules that will be filtered by the false positive reduction (FPR) network. However a number of those candidates are lying outside the lung itself and therefore should be filtered out before they are send through the FPR network. 
 
 At first, we used a similar strategy as proposed in the Kaggle Tutorial using a number of morphological operations such as erosion and dilation. After visual inspection of the segmentations, we noticed that the quality of the segmentation was too dependent on the size of the morphological operations. On top of that, morphological operations with a large diameter are very slow. A second observation we made was that 2D segmentation only works well on regular slice of the lung. Whenever there are more than 2 cavities, it’s not clear anymore if that cavity is part of the lung which is actually the main reason we apply this step.
@@ -103,6 +102,7 @@ Our final approach was a fast 3D approach which focused on removing non-lung cav
 
 
 # False Positive Reduction
+False positive Reduction of the 
 ## Architecture
 based on inception resnet v2 architecture
 some
