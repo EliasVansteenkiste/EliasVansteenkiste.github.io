@@ -2,27 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 <title type="text">Keep Your Learning Rate High</title>
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="http://EliasVansteenkiste.github.io/feed.xml" />
-<link rel="alternate" type="text/html" href="http://EliasVansteenkiste.github.io" />
-<updated>2017-04-12T23:21:21-04:00</updated>
-<id>http://EliasVansteenkiste.github.io/</id>
+<link rel="self" type="application/atom+xml" href="https://EliasVansteenkiste.github.io/feed.xml" />
+<link rel="alternate" type="text/html" href="https://EliasVansteenkiste.github.io" />
+<updated>2017-04-13T00:42:34-04:00</updated>
+<id>https://EliasVansteenkiste.github.io/</id>
 <author>
   <name>Elias Vansteenkiste</name>
-  <uri>http://EliasVansteenkiste.github.io/</uri>
+  <uri>https://EliasVansteenkiste.github.io/</uri>
   <email>Elias.Vansteenkiste@gmail.com</email>
 </author>
 
 
 <entry>
   <title type="html"><![CDATA[Predicting lung cancer]]></title>
- <link rel="alternate" type="text/html" href="http://EliasVansteenkiste.github.io/machine%20learning/lung-cancer-pred/" />
-  <id>http://EliasVansteenkiste.github.io/machine%20learning/lung-cancer-pred</id>
+ <link rel="alternate" type="text/html" href="https://EliasVansteenkiste.github.io/machine%20learning/lung-cancer-pred/" />
+  <id>https://EliasVansteenkiste.github.io/machine%20learning/lung-cancer-pred</id>
   <updated>2016-12-02T00:00:00-00:00</updated>
   <published>2017-04-10T00:00:00-04:00</published>
   
   <author>
     <name>Elias Vansteenkiste</name>
-    <uri>http://EliasVansteenkiste.github.io</uri>
+    <uri>https://EliasVansteenkiste.github.io</uri>
     <email>Elias.Vansteenkiste@gmail.com</email>
   </author>
   <content type="html">
@@ -33,8 +33,8 @@ The competition just finished and our team &lt;strong&gt;Deep Breath&lt;/strong&
 &lt;p&gt;The Deep Breath team consists of Andreas Verleysen, Elias Vansteenkiste, Fréderic Godin, Ira Korshunova, Jonas Degrave, Lionel Pigou and Matthias Freiberger. We are all PhD students and postdocs at Ghent University.&lt;/p&gt;
 
 &lt;figure class=&quot;center threequart&quot;&gt;
-&lt;a href=&quot;http://EliasVansteenkiste.github.io/images/common_cause_cancer_death.jpg&quot;&gt;
-&lt;img src=&quot;http://EliasVansteenkiste.github.io/images/common_cause_cancer_death.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;https://EliasVansteenkiste.github.io/images/common_cause_cancer_death.jpg&quot;&gt;
+&lt;img src=&quot;https://EliasVansteenkiste.github.io/images/common_cause_cancer_death.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
 &lt;figcaption&gt;The 10 Most Common Causes of Cancer Death &lt;a href=&quot;http://www.cancerresearchuk.org/health-professional/cancer-statistics/worldwide-cancer/mortality#heading-One&quot;&gt;(Credit: Cancer Research UK)&lt;/a&gt; &lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -70,12 +70,12 @@ This post is pretty long, so here is a clickable overview of different sections 
 Given the wordiness of the official name, it is commonly referred as the &lt;em&gt;LUNA dataset&lt;/em&gt;, which we will use in what follows.&lt;/p&gt;
 
 &lt;figure class=&quot;third center&quot;&gt;
-&lt;a href=&quot;http://EliasVansteenkiste.github.io/images/x-slice.jpg&quot;&gt;
-&lt;img src=&quot;http://EliasVansteenkiste.github.io/images/x-slice.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;http://EliasVansteenkiste.github.io/images/y-slice.jpg&quot;&gt;
-&lt;img src=&quot;http://EliasVansteenkiste.github.io/images/y-slice.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;http://EliasVansteenkiste.github.io/images/z-slice.jpg&quot;&gt;
-&lt;img src=&quot;http://EliasVansteenkiste.github.io/images/z-slice.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;https://EliasVansteenkiste.github.io/images/x-slice.jpg&quot;&gt;
+&lt;img src=&quot;https://EliasVansteenkiste.github.io/images/x-slice.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;https://EliasVansteenkiste.github.io/images/y-slice.jpg&quot;&gt;
+&lt;img src=&quot;https://EliasVansteenkiste.github.io/images/y-slice.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;https://EliasVansteenkiste.github.io/images/z-slice.jpg&quot;&gt;
+&lt;img src=&quot;https://EliasVansteenkiste.github.io/images/z-slice.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
 &lt;figcaption&gt;A close-up of a malignant nodule from the LUNA dataset (x-slice left, y-slice middle and z-slice right). &lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -100,8 +100,8 @@ We built a network for segmenting the nodules in the input scan. The LUNA datase
 &lt;p&gt;The network architecture is shown in the following schematic. The architecture is largely based on the &lt;a href=&quot;https://arxiv.org/abs/1505.04597&quot;&gt;U-net architecture&lt;/a&gt;, which is a common architecture for  2D image segmentation. We adopted the concepts and applied them to 3D input tensors. Our architecture mainly consists of convolutional layers with 3x3x3 filter kernels without padding.  Our architecture only has one max pooling layer, we tried more max pooling layers, but that didn’t help, maybe because the resolutions are smaller than in case of  the U-net architecture. The input shape of our segmentation network is 64x64x64. For the U-net architecture the input tensors have a 572x572 shape.&lt;/p&gt;
 
 &lt;figure&gt;
-&lt;a href=&quot;http://EliasVansteenkiste.github.io/images/nodule_segnet.jpg&quot;&gt;
-&lt;img src=&quot;http://EliasVansteenkiste.github.io/images/nodule_segnet.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;https://EliasVansteenkiste.github.io/images/nodule_segnet.jpg&quot;&gt;
+&lt;img src=&quot;https://EliasVansteenkiste.github.io/images/nodule_segnet.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
 &lt;figcaption&gt;A schematic of the segmentation network architecture. The tensor shapes are indicated inside the dark grey boxes and network operations inside the light grey. A C1 is a convolutional layer with 1x1x1 filter kernels and C3 is a convolutional layer with 3x3x3 filter kernels&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -128,18 +128,18 @@ The number of candidates is reduced by two filter methods:&lt;/p&gt;
 &lt;p&gt;At first, we used a similar strategy as proposed in the Kaggle Tutorial. It uses a number of morphological operations to segment the lungs. After visual inspection, we noticed that quality and computation time of the lung segmentations was too dependent on the size of the structuring elements. A second observation we made was that 2D segmentation only worked well on a regular slice of the lung. Whenever there were more than two cavities, it wasn’t clear anymore if that cavity was part of the lung.&lt;/p&gt;
 
 &lt;figure class=&quot;half center&quot;&gt;
-&lt;a href=&quot;http://EliasVansteenkiste.github.io/images/air_intestines.jpg&quot;&gt;
-&lt;img src=&quot;http://EliasVansteenkiste.github.io/images/air_intestines.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;https://EliasVansteenkiste.github.io/images/air_intestines.jpg&quot;&gt;
+&lt;img src=&quot;https://EliasVansteenkiste.github.io/images/air_intestines.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
 &lt;figcaption&gt;An example of a z-slice where you can see multiple cavities with air. The main ones are inside the lungs and the other ones are future farts or burps happily residing in the intestines.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;Our final approach was a 3D approach which focused on cutting out the non-lung cavities from the convex hull built around the lungs.&lt;/p&gt;
 
 &lt;figure class=&quot;half&quot;&gt;
-&lt;a href=&quot;http://EliasVansteenkiste.github.io/images/morphological.jpg&quot;&gt;
-&lt;img src=&quot;http://EliasVansteenkiste.github.io/images/morphological.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;http://EliasVansteenkiste.github.io/images/convex_hull.jpg&quot;&gt;
-&lt;img src=&quot;http://EliasVansteenkiste.github.io/images/convex_hull.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;https://EliasVansteenkiste.github.io/images/morphological.jpg&quot;&gt;
+&lt;img src=&quot;https://EliasVansteenkiste.github.io/images/morphological.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;https://EliasVansteenkiste.github.io/images/convex_hull.jpg&quot;&gt;
+&lt;img src=&quot;https://EliasVansteenkiste.github.io/images/convex_hull.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
 &lt;figcaption&gt;A z-slice of the CT scan in the middle of the the chest. On the left side the morphological approach, on the right side the convex hull approach.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -154,23 +154,23 @@ The &lt;a href=&quot;https://research.googleblog.com/2016/08/improving-inception
 These basic blocks were used to experiment with the number of layers, parameters and the size of the spatial dimensions in our network.&lt;/p&gt;
 
 &lt;figure class=&quot;center threequart&quot;&gt;
-&lt;a href=&quot;http://EliasVansteenkiste.github.io/images/spatial_reduction_block.jpg&quot;&gt;
-&lt;img src=&quot;http://EliasVansteenkiste.github.io/images/spatial_reduction_block.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;https://EliasVansteenkiste.github.io/images/spatial_reduction_block.jpg&quot;&gt;
+&lt;img src=&quot;https://EliasVansteenkiste.github.io/images/spatial_reduction_block.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
 &lt;figcaption&gt;A schematic of the spatial reduction block. The tensor shapes are indicated inside the dark grey boxes and network operations inside the light grey boxes&lt;/figcaption&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;The first building block is the &lt;strong&gt;spatial reduction block&lt;/strong&gt;. The spatial dimensions of the input tensor are halved by applying different reduction approaches. Max pooling on the one hand and strided convolutional layers on the other hand&lt;/p&gt;
 
 &lt;figure class=&quot;center onequart&quot;&gt;
-&lt;a href=&quot;http://EliasVansteenkiste.github.io/images/feat_red_block.jpg&quot;&gt;
-&lt;img src=&quot;http://EliasVansteenkiste.github.io/images/feat_red_block.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;https://EliasVansteenkiste.github.io/images/feat_red_block.jpg&quot;&gt;
+&lt;img src=&quot;https://EliasVansteenkiste.github.io/images/feat_red_block.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
 &lt;figcaption&gt;A schematic of the feature reduction block&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;p&gt;The &lt;strong&gt;feature reduction block&lt;/strong&gt; is a simple block in which a convolutional layer with 1x1x1 filter kernels is used to reduce the number of features. The number of filter kernels is the half of the number of input feature maps.&lt;/p&gt;
 
 &lt;figure class=&quot;center threequart&quot;&gt;
-&lt;a href=&quot;http://EliasVansteenkiste.github.io/images/residual_conv_block.jpg&quot;&gt;
-&lt;img src=&quot;http://EliasVansteenkiste.github.io/images/residual_conv_block.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;https://EliasVansteenkiste.github.io/images/residual_conv_block.jpg&quot;&gt;
+&lt;img src=&quot;https://EliasVansteenkiste.github.io/images/residual_conv_block.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
 &lt;figcaption&gt;A schematic of the residual convolutional block, with n the number of base filters&lt;/figcaption&gt;
 &lt;/figure&gt;
 &lt;p&gt;The &lt;strong&gt;residual convolutional block&lt;/strong&gt; contains three different stacks of convolutional layers block, each with a different number of layers. The most shallow stack does not widen the receptive field because it only has one conv layer with 1x1x1 filters. The deepest stack however, widens the receptive field with 5x5x5. The feature maps of the different stacks are concatenated and reduced to match the number of input feature maps of the block. The reduced feature maps are added to the input maps. This allows the network to skip the residual block during training if it doesn’t deem it necessary to have more convolutional layers. Finally the ReLu nonlinearity is applied to the activations in the resulting tenor.&lt;/p&gt;
@@ -298,7 +298,7 @@ We would like to thank the competition organizers for a challenging task and the
 Kaggle could easily prevent this in the future by truncating the scores returned when submitting a set of predictions.&lt;/p&gt;
 
 
-    &lt;p&gt;&lt;a href=&quot;http://EliasVansteenkiste.github.io/machine%20learning/lung-cancer-pred/&quot;&gt;Predicting lung cancer&lt;/a&gt; was originally published by Elias Vansteenkiste at &lt;a href=&quot;http://EliasVansteenkiste.github.io&quot;&gt;Keep Your Learning Rate High&lt;/a&gt; on April 10, 2017.&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://EliasVansteenkiste.github.io/machine%20learning/lung-cancer-pred/&quot;&gt;Predicting lung cancer&lt;/a&gt; was originally published by Elias Vansteenkiste at &lt;a href=&quot;https://EliasVansteenkiste.github.io&quot;&gt;Keep Your Learning Rate High&lt;/a&gt; on April 10, 2017.&lt;/p&gt;
   </content>
 </entry>
 
