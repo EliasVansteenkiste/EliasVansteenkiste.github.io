@@ -48,7 +48,7 @@ This post is pretty long, so here is a clickable overview of different sections 
 {::comment}
 Explain why it is a needle in the haystack problem
 {:/comment}
-To determine if someone will develop lung cancer, we have to look for early stages of malignant pulmonary nodules. Finding an early stage malignant nodule in the CT scan of a lung is like finding a needle in the haystack. To support this statement, let's take a look at a few examples of malignant nodules in the LIDC/IDRI data set from the [LUng Node Analysis Grand Challenge](https://luna16.grand-challenge.org/). We used this dataset extensively in our approach, because it contains detailed annotations from radiologists. 
+To determine if someone will develop lung cancer, we have to look for early stages of malignant pulmonary nodules. Finding an early stage malignant nodule in the CT scan of a lung is like finding a needle in the haystack. To support this statement, let's take a look at an example of a malignant nodule in the LIDC/IDRI data set from the [LUng Node Analysis Grand Challenge](https://luna16.grand-challenge.org/). We used this dataset extensively in our approach, because it contains detailed annotations from radiologists. 
 Given the wordiness of the official name, it is commonly referred as the *LUNA dataset*, which we will use in what follows.
 
 
