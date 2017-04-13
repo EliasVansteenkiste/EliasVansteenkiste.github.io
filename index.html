@@ -1,0 +1,478 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Keep Your Learning Rate High &#8211; Keep Your Learning Rate High</title>
+<meta name="description" content="A blog with posts about deep learning, human computer interface and electronics projects">
+<meta name="keywords" content="Jekyll, theme, themes, responsive, blog, modern">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@sailenav">
+<meta name="twitter:creator" content="@sailenav">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Keep Your Learning Rate High">
+<meta property="og:description" content="A blog with posts about deep learning, human computer interface and electronics projects">
+<meta property="og:url" content="http://EliasVansteenkiste.github.io/">
+<meta property="og:site_name" content="Keep Your Learning Rate High">
+<meta property="og:image" content="http://EliasVansteenkiste.github.io/images/images/logo.png">
+
+
+
+
+
+<link rel="canonical" href="http://EliasVansteenkiste.github.io/">
+<link href="http://EliasVansteenkiste.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Keep Your Learning Rate High Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://EliasVansteenkiste.github.io/assets/css/main.css">
+<link rel="stylesheet" href="http://EliasVansteenkiste.github.io/assets/css/jquery.mmenu.all.css">
+<link rel="stylesheet" href="http://EliasVansteenkiste.github.io/assets/css/jquery.floating-social-share.min.css">
+<!-- Webfonts -->
+<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script type="text/javascript" src="http://EliasVansteenkiste.github.io/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://EliasVansteenkiste.github.io/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://EliasVansteenkiste.github.io/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://EliasVansteenkiste.github.io/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://EliasVansteenkiste.github.io/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://EliasVansteenkiste.github.io/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://EliasVansteenkiste.github.io/images/apple-touch-icon-144x144-precomposed.png">
+
+
+
+
+</head>
+
+<body id="post-index">
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+
+
+<div class="header-menu header-menu-top">
+    <ul class="header-item-container">
+      <li class="header-item-title header-toggle "><a href="#menu"><h2><i class="fa fa-bars"></i></h2></a></li>
+      <li class="header-item-title">
+        <a href="http://EliasVansteenkiste.github.io/">
+          
+            <img class="logo" src="http://EliasVansteenkiste.github.io/images/logo.png" alt="Keep Your Learning Rate High">
+          
+          <a href="http://EliasVansteenkiste.github.io/" class="title"> Keep Your Learning Rate High</a>
+        </a>
+      </li>
+      
+        
+        
+
+        
+            
+                <li class="header-item "><a href="http://github.com/EliasVansteenkiste" target="_blank"><h3>Github</h3></a></li>
+            
+        
+      
+        
+        
+
+        
+            
+                <li class="header-item "><a href="http://EliasVansteenkiste.github.io/"><h3>Home</h3></a></li>
+            
+        
+      
+      <li class="header-item"><a href="http://EliasVansteenkiste.github.io/search"><h3><i class="fa fa-search"></i></h3></a></li>
+    </ul>
+  </div>
+<div class="entry-header">
+  <div class="header-title">
+    <div class="header-title-wrap">
+      <h1>Keep Your Learning Rate High</h1>
+      
+        <h2><span class="entry-date"><time>&nbsp;</time></span></h2>
+      
+
+      
+          <p class="entry-reading-time">
+            &nbsp;
+          </p><!-- /.entry-reading-time -->
+      
+    </div><!-- /.header-title-wrap -->
+  </div><!-- /.header-title -->
+</div><!-- /.entry-header -->
+
+
+<nav id="menu" style="display: none">
+  <ul>
+    
+      
+        <li><a href="http://EliasVansteenkiste.github.io/"><h3>Home</h3></a></li>
+      
+    
+      
+        <li><a href="http://EliasVansteenkiste.github.iohttp://github.com/EliasVansteenkiste"><h3>Github</h3></a></li>
+      
+    
+  </ul>
+</nav>
+
+
+  <a href="https://twitter.com/sailenav" class="btn btn-info button-twitter" data-show-count="false" data-size="large"><i class="fa fa-twitter"></i> <span> | Follow @sailenav</span></a>
+
+
+
+<div id="main" role="main">
+  
+<article class="hentry">
+  <header>
+    
+      <div class="entry-image-index">
+        <a href="http://EliasVansteenkiste.github.io/machine%20learning/lung-cancer-pred/" title="Predicting lung cancer"><img src="http://EliasVansteenkiste.github.io/images/lung-lungs.jpg" alt="Predicting lung cancer"></a>
+        <div class="image-credit">Image source: <a target="_blank" href="https://www.flickr.com/photos/pulmonary_pathology/5176583622/in/photostream/">flickr</a></div><!-- /.image-credit -->
+
+      </div><!-- /.entry-image -->
+    
+    <div class="entry-meta">
+      <span class="entry-date date published updated"><time datetime="2017-04-10T00:00:00-04:00"><a href="http://EliasVansteenkiste.github.io/machine%20learning/lung-cancer-pred/">April 10, 2017</a></time></span><span class="author vcard"><span class="fn"><a href="http://EliasVansteenkiste.github.io/about/" title="About Elias Vansteenkiste">Elias Vansteenkiste</a></span></span>
+      
+      <span class="entry-reading-time">
+        <i class="fa fa-clock-o"></i>
+        
+        Reading time ~10 minutes
+      </span><!-- /.entry-reading-time -->
+      
+    </div><!-- /.entry-meta -->
+    
+      <h1 class="entry-title"><a href="http://EliasVansteenkiste.github.io/machine%20learning/lung-cancer-pred/" rel="bookmark" title="Predicting lung cancer" itemprop="url">Predicting lung cancer</a></h1>
+    
+  </header>
+  <div class="entry-content">
+      <p>The Data Science Bowl is an annual data science competition hosted by Kaggle. In this year’s edition the goal was to detect lung cancer based on CT scans of the chest from people diagnosed with cancer within a year.<br />
+To tackle this challenge, we formed a mixed team of machine learning savvy people of which none had specific knowledge about medical image analysis or cancer prediction. Hence, the competition was both a nobel challenge and a good learning experience for us.
+The competition just finished and our team <strong>Deep Breath</strong> finished 9th! In this post, we explain our approach.</p>
+
+<p>The Deep Breath team consists of Andreas Verleysen, Elias Vansteenkiste, Fréderic Godin, Ira Korshunova, Jonas Degrave, Lionel Pigou and Matthias Freiberger. We are all PhD students and postdocs at Ghent University.</p>
+
+<figure class="center threequart">
+<a href="http://EliasVansteenkiste.github.io/images/common_cause_cancer_death.jpg">
+<img src="http://EliasVansteenkiste.github.io/images/common_cause_cancer_death.jpg" alt="" /></a>
+<figcaption>The 10 Most Common Causes of Cancer Death <a href="http://www.cancerresearchuk.org/health-professional/cancer-statistics/worldwide-cancer/mortality#heading-One">(Credit: Cancer Research UK)</a> </figcaption>
+</figure>
+
+<h1 id="introduction">Introduction</h1>
+<p>Lung cancer is the most common cause of cancer death worldwide. Second to breast cancer, it is also the most common form of cancer. To prevent lung cancer deaths, high risk individuals are being screened with low-dose CT scans, because early detection <a href="https://www.cancer.org/cancer/small-cell-lung-cancer/detection-diagnosis-staging/survival-rates.html">doubles the survival rate of lung cancer patients</a>.  Automatically identifying cancerous lesions in CT scans will save radiologists a lot of time. It will make diagnosing more affordable and hence will save many more lives.</p>
+
+<p>To predict lung cancer starting from a CT scan of the chest, the overall strategy was to reduce the high dimensional CT scan to a few regions of interest. Starting from these regions of interest we tried to predict lung cancer. In what follows we will explain how we trained several networks to extract the region of interests and to make a final prediction starting from the regions of interest.
+This post is pretty long, so here is a clickable overview of different sections if you want to skip ahead:</p>
+
+<ul>
+  <li><a href="#the-needle-in-the-haystack">The Needle in The Haystack</a></li>
+  <li><a href="#nodule-detection">Nodule Detection</a>
+    <ol>
+      <li><a href="#nodule-segmentation">Nodule Segmentation</a></li>
+      <li><a href="#lung-segmentation">Lung Segmentation</a></li>
+      <li><a href="#blob-detection">Blob Detection</a></li>
+    </ol>
+  </li>
+  <li><a href="#false-positive-reduction">False Positive Reduction</a></li>
+  <li><a href="#malignancy-prediction">Malignancy Prediction</a></li>
+  <li><a href="#lung-cancer-prediction">Lung Cancer Prediction</a>
+    <ol>
+      <li><a href="#transfer-learning">Transfer learning</a></li>
+      <li><a href="#aggregating-nodule-predictions">Aggregating Nodule Predictions</a></li>
+      <li><a href="#ensembling">Ensembling</a></li>
+    </ol>
+  </li>
+</ul>
+
+<h1 id="the-needle-in-the-haystack">The Needle in The Haystack</h1>
+<!-- Explain why it is a needle in the haystack problem -->
+<p>To determine if someone will develop lung cancer, we have to look for early stages of malignant pulmonary nodules. Finding an early stage malignant nodule in the CT scan of a lung is like finding a needle in the haystack. To support this statement, let’s take a look at an example of a malignant nodule in the LIDC/IDRI data set from the <a href="https://luna16.grand-challenge.org/">LUng Node Analysis Grand Challenge</a>. We used this dataset extensively in our approach, because it contains detailed annotations from radiologists. 
+Given the wordiness of the official name, it is commonly referred as the <em>LUNA dataset</em>, which we will use in what follows.</p>
+
+<figure class="third center">
+<a href="http://EliasVansteenkiste.github.io/images/x-slice.jpg">
+<img src="http://EliasVansteenkiste.github.io/images/x-slice.jpg" alt="" /></a>
+<a href="http://EliasVansteenkiste.github.io/images/y-slice.jpg">
+<img src="http://EliasVansteenkiste.github.io/images/y-slice.jpg" alt="" /></a>
+<a href="http://EliasVansteenkiste.github.io/images/z-slice.jpg">
+<img src="http://EliasVansteenkiste.github.io/images/z-slice.jpg" alt="" /></a>
+<figcaption>A close-up of a malignant nodule from the LUNA dataset (x-slice left, y-slice middle and z-slice right). </figcaption>
+</figure>
+
+<p>The radius of the average malicious nodule in the LUNA dataset is 4.8 mm and a typical CT scan captures a volume of 400mm x 400mm x 400mm. So we are looking for a feature that is almost a million times smaller than the input volume. Moreover, this feature determines the classification of the whole input volume. This makes analyzing CT scans an enormous burden for radiologists and a difficult task for conventional classification algorithms using convolutional networks.</p>
+
+<p>This problem is even worse in our case because we have to try to predict lung cancer starting from a CT scan from a patient that will be diagnosed with lung cancer within one year of the date the scan was taken. TIn the LUNA dataset contains patients that are already diagnosed with lung cancer. In our case the patients may not yet have developed a malignant nodule. So it is reasonable to assume that training directly on the data and labels from the competition wouldn’t work, but we tried it anyway and observed that the network doesn’t learn more than the bias in the training data.</p>
+
+<h1 id="nodule-detection">Nodule Detection</h1>
+<h2 id="nodule-segmentation">Nodule Segmentation</h2>
+<p>To reduce the amount of information in the scans, we first tried to detect pulmonary nodules. 
+We built a network for segmenting the nodules in the input scan. The LUNA dataset contains annotations for each nodule in a patient. These annotations contain the location and diameter of the nodule. We used this information to train our segmentation network.</p>
+
+<p>The chest scans are produced by a variety of CT scanners, this causes a difference in spacing between voxels of the original scan. We rescaled and interpolated all CT scans so that each voxel represents a 1x1x1 mm cube. To train the segmentation network, 64x64x64 patches are cut out of the CT scan and fed to the input of the segmentation network. For each patch, the ground truth is a 32x32x32 mm binary mask. Each voxel in the binary mask indicates if the voxel is inside the nodule. The masks are constructed by using the diameters in the nodule annotations.</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">intersection</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">y_true</span> <span class="o">*</span> <span class="n">y_pred</span><span class="p">)</span>
+<span class="n">dice</span> <span class="o">=</span> <span class="p">(</span><span class="mf">2.</span> <span class="o">*</span> <span class="n">intersection</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">y_true</span><span class="p">)</span> <span class="o">+</span> <span class="nb">sum</span><span class="p">(</span><span class="n">y_pred</span><span class="p">))</span></code></pre></figure>
+
+<p>As objective function we choose to optimize the Dice coefficient. The dice coefficient is a commonly used metric for image segmentation. It behaves well for the imbalance that occurs when training on smaller nodules, which are important for early stage cancer detection. A small nodule has a high imbalance in the ground truth mask between the number of voxels in- and outside the nodule.</p>
+
+<p>The downside of using the Dice coefficient is that it defaults to zero if there is no nodule inside the ground truth mask. There must be a nodule in each patch that we feed to the network. To introduce extra variation, we apply translation and rotation augmentation. The translation and rotation parameters are chosen so that a part of the nodule stays inside the 32x32x32 cube around the center of the 64x64x64 input patch.</p>
+
+<p>The network architecture is shown in the following schematic. The architecture is largely based on the <a href="https://arxiv.org/abs/1505.04597">U-net architecture</a>, which is a common architecture for  2D image segmentation. We adopted the concepts and applied them to 3D input tensors. Our architecture mainly consists of convolutional layers with 3x3x3 filter kernels without padding.  Our architecture only has one max pooling layer, we tried more max pooling layers, but that didn’t help, maybe because the resolutions are smaller than in case of  the U-net architecture. The input shape of our segmentation network is 64x64x64. For the U-net architecture the input tensors have a 572x572 shape.</p>
+
+<figure>
+<a href="http://EliasVansteenkiste.github.io/images/nodule_segnet.jpg">
+<img src="http://EliasVansteenkiste.github.io/images/nodule_segnet.jpg" alt="" /></a>
+<figcaption>A schematic of the segmentation network architecture. The tensor shapes are indicated inside the dark grey boxes and network operations inside the light grey. A C1 is a convolutional layer with 1x1x1 filter kernels and C3 is a convolutional layer with 3x3x3 filter kernels</figcaption>
+</figure>
+
+<p>The trained network is used to segment all the CT scans of the patients in the LUNA and DSB dataset. 64x64x64 patches are taken out the volume with a stride of 32x32x32 and the prediction maps are stitched together. In the resulting tensor, each value represents the predicted probability that the voxel is located inside a nodule.</p>
+
+<h2 id="blob-detection">Blob Detection</h2>
+<p>In this stage we have a prediction for each voxel inside the lung scan, but we want to find the centers of the nodules. The nodule centers are found by looking for blobs of high probability voxels. Once the blobs are found their center will be used as the center of nodule candidate.</p>
+
+<p>In our approach blobs are detected using the <a href="https://en.wikipedia.org/wiki/Blob_detection#The_difference_of_Gaussians_approach">Difference of Gaussian (DoG) method</a>, which uses a less computational intensive approximation of the Laplacian operator. 
+We used the implementation available in skimage package.</p>
+
+<p>After the detection of the blobs, we end up with a list of nodule candidates with their centroids.
+Unfortunately the list contains a large amount of nodule candidates. For the CT scans in the DSB train dataset, the average number of candidates is 153.
+The number of candidates is reduced by two filter methods:</p>
+<ul>
+  <li>Applying lung segmentation before blob detection</li>
+  <li>Training a false positive reduction expert network</li>
+</ul>
+
+<h2 id="lung-segmentation">Lung Segmentation</h2>
+
+<p>Since the nodule segmentation network could not see a global context, it produced many false positives outside the lungs, which were picked up in the later stages. To alleviate this problem, we used a hand-engineered lung segmentation method.</p>
+
+<p>At first, we used a similar strategy as proposed in the Kaggle Tutorial. It uses a number of morphological operations to segment the lungs. After visual inspection, we noticed that quality and computation time of the lung segmentations was too dependent on the size of the structuring elements. A second observation we made was that 2D segmentation only worked well on a regular slice of the lung. Whenever there were more than two cavities, it wasn’t clear anymore if that cavity was part of the lung.</p>
+
+<figure class="half center">
+<a href="http://EliasVansteenkiste.github.io/images/air_intestines.jpg">
+<img src="http://EliasVansteenkiste.github.io/images/air_intestines.jpg" alt="" /></a>
+<figcaption>An example of a z-slice where you can see multiple cavities with air. The main ones are inside the lungs and the other ones are future farts or burps happily residing in the intestines.</figcaption>
+</figure>
+
+<p>Our final approach was a 3D approach which focused on cutting out the non-lung cavities from the convex hull built around the lungs.</p>
+
+<figure class="half">
+<a href="http://EliasVansteenkiste.github.io/images/morphological.jpg">
+<img src="http://EliasVansteenkiste.github.io/images/morphological.jpg" alt="" /></a>
+<a href="http://EliasVansteenkiste.github.io/images/convex_hull.jpg">
+<img src="http://EliasVansteenkiste.github.io/images/convex_hull.jpg" alt="" /></a>
+<figcaption>A z-slice of the CT scan in the middle of the the chest. On the left side the morphological approach, on the right side the convex hull approach.</figcaption>
+</figure>
+
+<h1 id="false-positive-reduction">False Positive Reduction</h1>
+<p>To further reduce the number of nodule candidates we trained an expert network to predict if the given candidate after blob detection is indeed a nodule. We used lists of false and positive nodule candidates to train our expert network. The LUNA grand challenge has a false positive reduction track which offers a list of false and true nodule candidates for each patient.</p>
+
+<p>For training our false positive reduction expert we used 48x48x48 patches and applied full rotation augmentation and a little translation augmentation (±3 mm).</p>
+
+<h2 id="architecture">Architecture</h2>
+<p>If we want the network to detect both small nodules (diameter &lt;= 3mm) and large nodules (diameter &gt; 30 mm), the architecture should enable the network to train both features with a very narrow and a wide receptive field.
+The <a href="https://research.googleblog.com/2016/08/improving-inception-and-image.html">inception-resnet v2 architecture</a> is very well suited for training features with different receptive fields. Our architecture is largely based on this architecture. We simplified the inception resnet v2 and applied its principles to tensors with 3 spatial dimensions. We distilled reusable flexible modules.
+These basic blocks were used to experiment with the number of layers, parameters and the size of the spatial dimensions in our network.</p>
+
+<figure class="center threequart">
+<a href="http://EliasVansteenkiste.github.io/images/spatial_reduction_block.jpg">
+<img src="http://EliasVansteenkiste.github.io/images/spatial_reduction_block.jpg" alt="" /></a>
+<figcaption>A schematic of the spatial reduction block. The tensor shapes are indicated inside the dark grey boxes and network operations inside the light grey boxes</figcaption>
+</figure>
+
+<p>The first building block is the <strong>spatial reduction block</strong>. The spatial dimensions of the input tensor are halved by applying different reduction approaches. Max pooling on the one hand and strided convolutional layers on the other hand</p>
+
+<figure class="center onequart">
+<a href="http://EliasVansteenkiste.github.io/images/feat_red_block.jpg">
+<img src="http://EliasVansteenkiste.github.io/images/feat_red_block.jpg" alt="" /></a>
+<figcaption>A schematic of the feature reduction block</figcaption>
+</figure>
+<p>The <strong>feature reduction block</strong> is a simple block in which a convolutional layer with 1x1x1 filter kernels is used to reduce the number of features. The number of filter kernels is the half of the number of input feature maps.</p>
+
+<figure class="center threequart">
+<a href="http://EliasVansteenkiste.github.io/images/residual_conv_block.jpg">
+<img src="http://EliasVansteenkiste.github.io/images/residual_conv_block.jpg" alt="" /></a>
+<figcaption>A schematic of the residual convolutional block, with n the number of base filters</figcaption>
+</figure>
+<p>The <strong>residual convolutional block</strong> contains three different stacks of convolutional layers block, each with a different number of layers. The most shallow stack does not widen the receptive field because it only has one conv layer with 1x1x1 filters. The deepest stack however, widens the receptive field with 5x5x5. The feature maps of the different stacks are concatenated and reduced to match the number of input feature maps of the block. The reduced feature maps are added to the input maps. This allows the network to skip the residual block during training if it doesn’t deem it necessary to have more convolutional layers. Finally the ReLu nonlinearity is applied to the activations in the resulting tenor.</p>
+
+<p>We experimented with these bulding blocks and found the following architecture to be the most performing for the false positive reduction task:</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">build_model</span><span class="p">(</span><span class="n">l_in</span><span class="p">):</span>
+    <span class="n">l</span> <span class="o">=</span> <span class="n">conv3d</span><span class="p">(</span><span class="n">l_in</span><span class="p">,</span> <span class="mi">64</span><span class="p">)</span>
+
+    <span class="n">l</span> <span class="o">=</span> <span class="n">spatial_red_block</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
+    <span class="n">l</span> <span class="o">=</span> <span class="n">res_conv_block</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
+    <span class="n">l</span> <span class="o">=</span> <span class="n">spatial_red_block</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
+    <span class="n">l</span> <span class="o">=</span> <span class="n">res_conv_block</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
+    <span class="n">l</span> <span class="o">=</span> <span class="n">spatial_red_block</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
+    <span class="n">l</span> <span class="o">=</span> <span class="n">res_conv_block</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
+
+    <span class="n">l</span> <span class="o">=</span> <span class="n">feat_red</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
+    <span class="n">l</span> <span class="o">=</span> <span class="n">res_conv_block</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
+    <span class="n">l</span> <span class="o">=</span> <span class="n">feat_red</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
+
+    <span class="n">l</span> <span class="o">=</span> <span class="n">dense</span><span class="p">(</span><span class="n">drop</span><span class="p">(</span><span class="n">l</span><span class="p">),</span> <span class="mi">128</span><span class="p">)</span>
+
+    <span class="n">l_out</span> <span class="o">=</span> <span class="n">DenseLayer</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">num_units</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">nonlinearity</span><span class="o">=</span><span class="n">sigmoid</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">l_out</span></code></pre></figure>
+
+<p>An important difference with the original inception is that we only have one convolutional layer at the beginning of our network. In the original inception resnet v2 architecture there is a stem block to reduce the dimensions of the input image.</p>
+
+<h2 id="results">Results</h2>
+<p>Our validation subset of the LUNA dataset consists of the 118 patients that have 238 nodules in total. After segmentation and blob detection 229 of the 238 nodules are found, but we have around 17K false positives. To reduce the false positives the candidates are ranked following the prediction given by the false positive reduction network.</p>
+
+<table rules="groups">
+  <thead>
+    <tr>
+      <th style="text-align: center">Top</th>
+      <th style="text-align: center">True Positives</th>
+      <th style="text-align: center">False Positives</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">10</td>
+      <td style="text-align: center">221</td>
+      <td style="text-align: center">959</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">4</td>
+      <td style="text-align: center">187</td>
+      <td style="text-align: center">285</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">147</td>
+      <td style="text-align: center">89</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">99</td>
+      <td style="text-align: center">19</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="malignancy-prediction">Malignancy Prediction</h1>
+<p>It was only in the final 2 weeks of the competition that we discovered the existence of malignancy labels for the nodules in the LUNA dataset. These labels are part of the LIDC-IDRI dataset upon which LUNA is based. For the LIDC-IDRI, 4 radiologist scored nodules on a scale from 1 to 5 for different properties.  The discussions on the Kaggle discussion board mainly focussed on the LUNA dataset but it was only when we trained a model to predict the malignancy of the individual nodules/patches that we were able to get close to the top scores on the LB.</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">build_model</span><span class="p">(</span><span class="n">l_in</span><span class="p">):</span>
+    <span class="n">l</span> <span class="o">=</span> <span class="n">conv3d</span><span class="p">(</span><span class="n">l_in</span><span class="p">,</span> <span class="mi">64</span><span class="p">)</span>
+
+    <span class="n">l</span> <span class="o">=</span> <span class="n">spatial_red_block</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
+    <span class="n">l</span> <span class="o">=</span> <span class="n">res_conv_block</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
+    <span class="n">l</span> <span class="o">=</span> <span class="n">spatial_red_block</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
+    <span class="n">l</span> <span class="o">=</span> <span class="n">res_conv_block</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
+
+    <span class="n">l</span> <span class="o">=</span> <span class="n">spatial_red_block</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
+    <span class="n">l</span> <span class="o">=</span> <span class="n">spatial_red_block</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
+
+    <span class="n">l</span> <span class="o">=</span> <span class="n">dense</span><span class="p">(</span><span class="n">drop</span><span class="p">(</span><span class="n">l</span><span class="p">),</span> <span class="mi">512</span><span class="p">)</span>
+
+    <span class="n">l_out</span> <span class="o">=</span> <span class="n">DenseLayer</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">num_units</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">nonlinearity</span><span class="o">=</span><span class="n">sigmoid</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">l_out</span></code></pre></figure>
+
+<p>The network we used was very similar to the FPR network architecture. In short it has more spatial reduction blocks, more dense units in the penultimate layer and no feature reduction blocks.</p>
+
+<p>We rescaled the malignancy labels so that they are represented between 0 and 1 to create a probability label. We constructed a training set by sampling an equal amount of candidate nodules that did not have a malignancy label in the LUNA dataset.</p>
+
+<p>As objective function, we used the Mean Squared Error (MSE) loss which showed to work better than a binary cross-entropy objective function.</p>
+
+<h1 id="lung-cancer-prediction">Lung Cancer Prediction</h1>
+<p>After we ranked the candidate nodules with the false positive reduction network and trained a malignancy prediction network, we are finally able to train a network for lung cancer prediction on the Kaggle dataset. Our strategy consisted of sending a set of n top ranked candidate nodules through the same subnetwork and combining the individual scores/predictions/activations in a final aggregation layer.</p>
+
+<h2 id="transfer-learning">Transfer learning</h2>
+<p>After training a number of different architectures from scratch, we realized that we needed better ways of inferring good features. Although we reduced the full CT scan to a number of regions of interest, the number of patients is still low so the number of malignant nodules is still low. Therefore, we focussed on initializing the networks with pre-trained weights.</p>
+
+<p>The transfer learning idea is quite popular in image classification tasks with RGB images where the majority of the transfer learning approaches use a network trained on the ImageNet dataset  as the convolutional layers of their own network. Hence, good features are learned on a big dataset and are then reused (transferred) as part of another neural network/another classification task. However, for CT scans we did not have access to such a pretrained network so we needed to train one ourselves.</p>
+
+<p>At first, we used the the fpr network which already gave some improvements. Subsequently, we trained a network to predict the size of the nodule because that was also part of the annotations in the LUNA dataset. In both cases, our main strategy was to reuse the convolutional layers but to randomly initialize the dense layers.</p>
+
+<p>In the final weeks, we used the full malignancy network to start from and only added an aggregation layer on top of it. However, we retrained all layers anyway. Somehow logical, this was the best solution.</p>
+
+<h2 id="aggregating-nodule-predictions">Aggregating Nodule Predictions</h2>
+<p>We tried several approaches to combine the malignancy predictions of the nodules. We highlight the 2 most successful aggregation strategies:</p>
+<ul>
+  <li><strong>P_patient_cancer = 1 - ∏ P_nodule_benign</strong>: The idea behind this aggregation is that the probability of having cancer is equal to 1 if all the nodules are benign. If one nodule is classified as malignant, P_patient_cancer will be one.
+The problem with this approach is that it doesn’t behave well when the malignancy prediction network is convinced one of the nodules is malignant. Once the network is correctly predicting that the network one of the nodules is malignant, the learning stops.</li>
+  <li><strong>Log Mean Exponent</strong>: The idea behind this aggregation strategy is that the cancer probability is determined by the most malignant/the least benign nodule. The LME aggregation works as the soft version of a max operator.  As the name suggest, it exponential blows up the predictions of the individual nodule predictions, hence focussing on the largest(s) probability(s). Compared to a simple max function, this function also allows backpropagating through the networks of the other predictions.</li>
+</ul>
+
+<h2 id="ensembling">Ensembling</h2>
+<p>Our ensemble merges the predictions of our 30 last stage models. Since Kaggle allowed two submissions, we used two ensembling methods:</p>
+<ol>
+  <li><strong>Defensive ensemble</strong>: Average the predictions using weights optimized on our internal validation set. The recurring theme we saw during this process was the high reduction of the number of models used in the ensemble. This is caused by the high similarity between the models. It turned out that for our final submission, only one model was selected.</li>
+  <li><strong>Aggressive ensemble</strong>: Cross-validation is used to select the high-scoring models that will be blended uniformly. The models used in this ensemble are trained on all the data, hence the name ‘aggressive ensemble’. We uniformly blend these ‘good’ models to avoid the risk of ending up with an ensemble with very few models because of the high pruning factor during weight optimization. It also reduces the impact of an overfitted model. 
+Reoptimizing the ensemble per test patient by removing models that disagree strongly with the ensemble was not very effective because many models get pruned anyway during the optimization. Another approach to select final ensemble weights was to average the weights that were chosen during CV. This didn’t improve our performance. We also tried stacking the predictions using tree models but because of the lack of meta-features, it didn’t perform competitively and decreased the stability of the ensemble.</li>
+</ol>
+
+<h1 id="final-thoughts">Final Thoughts</h1>
+<p>A big part of the challenge was to build the complete system. It consists of quite a number of steps and we did not have the time to completely finetune every part of it.
+So there is stil a lot of room for improvement.
+We would like to thank the competition organizers for a challenging task and the noble end.</p>
+
+<h2 id="hacking-the-leaderboard">Hacking the leaderboard</h2>
+<p>Before the competition started a clever way to deduce the ground truth labels of the leaderboard was posted. It uses the information you get from a the high precision score returned when submitting a prediction. As a result everyone could reverse engineer the ground truths of the leaderboard based on a limited amount of submissions.</p>
+
+<p>Normally the leaderboard gives a real indication of how the other teams are doing, but now we were completely in the dark, and this negatively impacted our motivation.
+Kaggle could easily prevent this in the future by truncating the scores returned when submitting a set of predictions.</p>
+
+
+      
+  </div><!-- /.entry-content -->
+</article><!-- /.hentry -->
+
+
+
+
+</div><!-- /#main -->
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">window.jQuery || document.write('<script type="text/javascript" src="http://EliasVansteenkiste.github.io/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script type="text/javascript" src="http://EliasVansteenkiste.github.io/assets/js/scripts.min.js"></script>
+<script type="text/javascript" async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+<script type="text/javascript">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+
+
+
+
+
+<script type="text/javascript">
+    sharing();
+</script>
+
+
+
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    <span>&copy; 2017 Elias Vansteenkiste. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a href="http://github.com/aron-bordin/neo-hpstr-jekyll-theme" rel="nofollow">Neo-HPSTR Theme</a>.</span>
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+</body>
+</html>
