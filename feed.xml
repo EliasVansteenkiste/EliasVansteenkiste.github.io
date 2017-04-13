@@ -4,7 +4,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="https://EliasVansteenkiste.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="https://EliasVansteenkiste.github.io" />
-<updated>2017-04-13T00:42:34-04:00</updated>
+<updated>2017-04-13T09:11:37-04:00</updated>
 <id>https://EliasVansteenkiste.github.io/</id>
 <author>
   <name>Elias Vansteenkiste</name>
@@ -30,7 +30,7 @@
 To tackle this challenge, we formed a mixed team of machine learning savvy people of which none had specific knowledge about medical image analysis or cancer prediction. Hence, the competition was both a nobel challenge and a good learning experience for us.
 The competition just finished and our team &lt;strong&gt;Deep Breath&lt;/strong&gt; finished 9th! In this post, we explain our approach.&lt;/p&gt;
 
-&lt;p&gt;The Deep Breath team consists of Andreas Verleysen, Elias Vansteenkiste, Fréderic Godin, Ira Korshunova, Jonas Degrave, Lionel Pigou and Matthias Freiberger. We are all PhD students and postdocs at Ghent University.&lt;/p&gt;
+&lt;p&gt;The Deep Breath team consists of &lt;a href=&quot;https://twitter.com/resivium&quot;&gt;Andreas Verleysen&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/SaileNav&quot;&gt;Elias Vansteenkiste&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/frederic_godin&quot;&gt;Fréderic Godin&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/iskorna&quot;&gt;Ira Korshunova&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/317070&quot;&gt;Jonas Degrave&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/lpigou&quot;&gt;Lionel Pigou&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/mfreib&quot;&gt;Matthias Freiberger&lt;/a&gt;. We are all PhD students and postdocs at Ghent University.&lt;/p&gt;
 
 &lt;figure class=&quot;center threequart&quot;&gt;
 &lt;a href=&quot;https://EliasVansteenkiste.github.io/images/common_cause_cancer_death.jpg&quot;&gt;
@@ -296,6 +296,8 @@ We would like to thank the competition organizers for a challenging task and the
 
 &lt;p&gt;Normally the leaderboard gives a real indication of how the other teams are doing, but now we were completely in the dark, and this negatively impacted our motivation.
 Kaggle could easily prevent this in the future by truncating the scores returned when submitting a set of predictions.&lt;/p&gt;
+
+&lt;p&gt;The Deep Breath Team&lt;/p&gt;
 
 
     &lt;p&gt;&lt;a href=&quot;https://EliasVansteenkiste.github.io/machine%20learning/lung-cancer-pred/&quot;&gt;Predicting lung cancer&lt;/a&gt; was originally published by Elias Vansteenkiste at &lt;a href=&quot;https://EliasVansteenkiste.github.io&quot;&gt;Keep Your Learning Rate High&lt;/a&gt; on April 10, 2017.&lt;/p&gt;
