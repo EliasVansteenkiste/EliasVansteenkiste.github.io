@@ -30,6 +30,30 @@ figure {
       }
     }
   }
+  &.threequart {
+    @media #{$large} {
+      img {
+        width: 400px;
+        float: left;
+        margin-right: 10px;
+      }
+      figcaption {
+        clear: left;
+      }
+    }
+  }
+  &.onequart {
+    @media #{$large} {
+      img {
+        width: 150px;
+        float: left;
+        margin-right: 10px;
+      }
+      figcaption {
+        clear: left;
+      }
+    }
+  }
   &.half {
     @media #{$large} {
       img {
